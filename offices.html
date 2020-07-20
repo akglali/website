@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>offices | Yamata</title>
+    <link rel="stylesheet" href="css/mineCss/offices.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/icon.png" height="40" class="d-inline-block align-top" alt="mdb logo">Yamata
+        </a>
+        <!-- This lines add the logo (21-23)-->
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--This line make the items clickable(25-27)-->
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav mr-auto">
+                <!--It puts the item to the left when you use it with line 51.-->
+                <li class="nav-item">
+                    <a class="nav-link" id="homeN" href="index.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="aboutN" href="about.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="projectsN" href="porjects.html"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarMoreLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarMoreLinks">
+                        <a class="dropdown-item" href="humanResources.html" id="hr"></a>
+                        <a class="dropdown-item" href="news.html" id="news"></a>
+                        <a class="dropdown-item" href="contact.html" id="contact"></a>
+                        <a class="dropdown-item" href="offices.html" id="offices"></a>
+                    </div>
+                </li>
+                <!--These codes show how to use dropdown items(40-49) -->
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#en" id="EN">ENG</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#tr" id="TR">TR</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#РУС" id="РУС">РУС</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="w3-container">
+        <div class="je-center">
+            <img src="images/image_about1.jpg" alt="logo" class="center">
+            <h3 style="color: gray; padding-bottom: 10px; text-align: center;" id="offices1"></h3>
+            <div class="text-container">
+                <h3 id="officeTR" class="heads"></h3>
+                <p id="locationTR" class="locations"></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.754081104249!2d29.08049281528014!3d41.09621947929195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caca483bfe2507%3A0xc388243c9e3c76b4!2sYamata!5e0!3m2!1sen!2sus!4v1594883528408!5m2!1sen!2sus"
+                    width="100%" height="450" frameborder="0" style="border:1; padding-bottom: 20px; text-align: left;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="img_container">
+                    <p id="headOfTR" style="font-size: 24px;">&nbsp;&nbsp;</p>
+                    <i class="fa fa-address-book-o" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="adressTR" style="padding-bottom: 5px; text-align: center;"></span>
+                    <br>
+                    <i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp;
+                    <a href="tel:90-216-538-0300">+ 90 216 538 03 00</a>
+                    <br>
+                    <i class="fa fa-fax" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span>+90 216 537 03 23</span>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="email">yamata@yamata.com.tr</span>
+                    <br><br>
+                </div>
+                <h3 id="officeRS" class="heads"></h3>
+                <p id="locationRS" class="locations"></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9522.742229421501!2d37.556201963323595!3d55.722570844201556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9cfd300001%3A0xd2335c1f18e5551d!2zS29tc29tb2wnc2tpeSBQcm9zcGVrdCwgNDIsIDEsIDct0Y3RgtCw0LYsIE1vc2t2YSwgUnVzc2lhLCAxMTkwNDg!5e0!3m2!1sen!2str!4v1594968165189!5m2!1sen!2str"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="img_container">
+                    <p id="ofRS" style="font-size: 24px;"></p>
+                    <i class="fa fa-address-book-o" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="adressRS" style="padding-bottom: 5px; text-align: center;"></span>
+                    <br>
+                    <i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp;
+                    <a href="tel:7-495-660-7877">+7 495 660 78 77</a>
+                    <br>
+                    <i class="fa fa-fax" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span>+7 495 212 22 47</span>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="email">erkal.parmaksiz@yamata.com.tr</span>
+                    <br><br>
+                </div>
+                <h3 id="officeTyRS" class="heads"></h3>
+                <p id="locationTyRS" class="locations"></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2161.865360714581!2d65.64041331588854!3d57.1906369809623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43bbe5d2f3edc489%3A0xb7bb5733ce6b5b2c!2sUlitsa%20Prazhskaya%2C%2017%D0%90%2C%20Tyumen%2C%20Tyumenskaya%20oblast&#39;%2C%20Russia%2C%20625055!5e0!3m2!1sen!2sus!4v1594969459010!5m2!1sen!2sus"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="img_container">
+                    <p id="ofTyRS" style="font-size: 24px;"></p>
+                    <i class="fa fa-address-book-o" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="adressTyRS" style="padding-bottom: 5px; text-align: center;"></span>
+                    <br>
+                    <i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp;
+                    <a href="tel:7-345-246-9460">+7 345 246 94 60</a>
+                    <br>
+                    <i class="fa fa-fax" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span>+7 345 246 94 68</span>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="email"> tyumen@yamata.com.tr</span>
+                    <br><br>
+                </div>
+                <h3 id="officeLB" class="heads"></h3>
+                <p id="locationLB" class="locations"></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.6654833912166!2d13.186934829210232!3d32.88066299880881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUyJzUwLjQiTiAxM8KwMTEnMTQuOSJF!5e0!3m2!1sen!2sus!4v1594971178688!5m2!1sen!2sus"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="img_container">
+                    <p id="ofLB" style="font-size: 24px;"></p>
+                    <i class="fa fa-address-book-o" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="adressLB" style="padding-bottom: 5px; text-align: center;"></span>
+                    <br>
+                    <i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp;
+                    <a href="tel:218-21-723-5941">+218 21 723 59 41</a>
+                    <br>
+                    <i class="fa fa-fax" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span>+218 21 483 65 60</span>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="email">  firat.ocalan@yamata.com.tr</span>
+                    <br><br>
+                </div>
+                <h3 id="officeIraq" class="heads"></h3>
+                <p id="locationIraq" class="locations"></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.1552736376235!2d44.010761829216094!3d36.175773998755126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDEwJzMyLjgiTiA0NMKwMDAnNDAuNyJF!5e0!3m2!1sen!2sus!4v1594971803302!5m2!1sen!2sus"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="img_container">
+                    <p id="ofIraq" style="font-size: 24px;"></p>
+                    <i class="fa fa-address-book-o" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="adressIraq" style="padding-bottom: 5px; text-align: center;"></span>
+                    <br>
+                    <i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp;
+                    <a href="tel:964-66-222-1667">+964 66 222 16 67</a>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="email"> erbil@yamata.com.tr</span>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="rows" style="background-color: #F19999; margin-bottom: 60px;">
+            <p id="bottom1" class="bottomText"></p>
+            <div class="bottom_container">
+                <i class="fa fa-address-book-o icon" style="font-size:24px"></i> &nbsp;&nbsp;
+                <span id="adressBottom" style="padding-bottom: 5px; text-align: center;"></span>
+                <br>
+                <i class="fa fa-phone icon" style="font-size:24px"></i> &nbsp; &nbsp;
+                <a href="tel:90-216-538-0300">+ 90 216 538 03 00</a>
+                <br>
+                <i class="fa fa-fax icon" style="font-size:24px"></i> &nbsp;&nbsp;
+                <span>+ 90 216 537 03 23</span>
+                <br>
+                <i class="fa fa-envelope icon" style="font-size:24px"></i> &nbsp;&nbsp;
+                <span id="email">yamata@yamata.com.tr</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mineJs/main.js"></script>
+    <script src="js/mineJs/offices.js"></script>
+</body>
+
+
+</html>

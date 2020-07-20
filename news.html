@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>News | Yamata</title>
+    <link rel="stylesheet" href="css/mineCss/news.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/icon.png" height="40" class="d-inline-block align-top" alt="mdb logo">Yamata
+        </a>
+        <!-- This lines add the logo (21-23)-->
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--This line make the items clickable(25-27)-->
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav mr-auto">
+                <!--It puts the item to the left when you use it with line 51.-->
+                <li class="nav-item">
+                    <a class="nav-link" id="homeN" href="index.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="aboutN" href="about.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="projectsN" href="porjects.html"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarMoreLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarMoreLinks">
+                        <a class="dropdown-item" href="humanResources.html" id="hr"></a>
+                        <a class="dropdown-item" href="news.html" id="news"></a>
+                        <a class="dropdown-item" href="contact.html" id="contact"></a>
+                        <a class="dropdown-item" href="offices.html" id="offices"></a>
+                    </div>
+                </li>
+                <!--These codes show how to use dropdown items(40-49) -->
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#en" id="EN">ENG</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#tr" id="TR">TR</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#РУС" id="РУС">РУС</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="w3-container">
+        <div class="je-center">
+            <img src="images/image_about1.jpg" alt="logo" class="center">
+            <h3 class="news" style="color: gray; padding-bottom: 80px; " id="news2"></h3>
+            <p class="news" id="news_1" style="font-family:verdana; font-size:110%;"></p>
+            <p class="news" id="news_2" style="font-family:verdana; font-size:100%;"></p>
+            <p class=",news" id="news_3" style="font-family:verdana; font-size:110%;"></p>
+            <p class="news" id="news_4" style="font-family:courier; font-size: 90%;"></p>
+            <p class="news" id="news_5" style="font-family:verdana; font-size:110%;"></p>
+            <p class="news" id="news_6" style="font-family:courier; font-size: 90%;"></p>
+            <p class="news" id="news_7" style="font-family:verdana; font-size:110%;"></p>
+            <p class="news" id="news_8" style="font-family:courier; font-size: 90%;"></p>
+            <p class="news" id="news_9" style="font-family:verdana; font-size:110%;"></p>
+            <p class="news" id="news_10" style="font-family:courier; font-size: 90%;"></p>
+            <p class="news" id="news_11" style="font-family:verdana; font-size:110%;"></p>
+            <p class="news" id="news_12" style="font-family:courier; font-size: 90%; padding-bottom: 50px;"></p>
+        </div>
+
+    </div>
+    <script src="js/mineJs/main.js"></script>
+    <script src="js/mineJs/news.js"></script>
+
+</body>
+
+</html>

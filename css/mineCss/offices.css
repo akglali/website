@@ -1,0 +1,58 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 150px;
+}
+
+.w3-container {
+    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.bigMap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 20px;
+}
+
+.heads {
+    text-align: center;
+    color: gray;
+}
+
+.text-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.locations {
+    text-align: center;
+}
+
+.img_container {
+    text-align: left;
+}
+
+.bottomText {
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+
+.bottom_container {
+    text-align: right;
+    color: white;
+}
+
+.icon:hover {
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+    ;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* CSS File */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 200px;
+}
+
+.w3-container {
+    padding: 60px;
+    width: 75%;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

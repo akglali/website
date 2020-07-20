@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Yamal | Yamata</title>
+    <link rel="stylesheet" href="css/mineCss/yamal.css">
+    <link rel="stylesheet" href="css/mineCss/projectsDetails.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="images/icon.png" height="40" class="d-inline-block align-top" alt="mdb logo">Yamata
+        </a>
+        <!-- This lines add the logo (21-23)-->
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--This line make the items clickable(25-27)-->
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav mr-auto">
+                <!--It puts the item to the left when you use it with line 51.-->
+                <li class="nav-item">
+                    <a class="nav-link" id="homeN" href="index.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="aboutN" href="about.html"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="projectsN" href="porjects.html"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarMoreLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarMoreLinks">
+                        <a class="dropdown-item" href="humanResources.html" id="hr"></a>
+                        <a class="dropdown-item" href="news.html" id="news"></a>
+                        <a class="dropdown-item" href="contact.html" id="contact"></a>
+                        <a class="dropdown-item" href="offices.html" id="offices"></a>
+                    </div>
+                </li>
+                <!--These codes show how to use dropdown items(40-49) -->
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#en" id="EN">ENG</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#tr" id="TR">TR</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#РУС" id="РУС">РУС</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="w3-container" style="padding:60px; ">
+        <div class="je-center">
+            <img src="images/image_about1.jpg" alt="logo" class="center">
+            <h3 id="header" style="text-align: center; background-color: grey; padding: 30px; font-family: 'Aclonica';"></h3>
+            <a href="completedProject.html">
+                <button class="button1" id="completedProjects"></button>
+            </a>
+            <span>
+                <a href="#">
+                    <button class="button " id="currentProjects"></button>
+                </a>
+            </span>
+            <br><br><br>
+            <button class="button2" id="goBack" onclick="goBack()"></button>
+            <br><br>
+            <div class="container features">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home1.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home1"></P>
+                        <p id="home1bir"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_2.html">
+                            <img src="images/yamal/home2.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home2"></P>
+                        <p id="home2bir"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_3.html">
+                            <img src="images//yamal/home3.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home3"></P>
+                        <p id="home3bir"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_4.html">
+                            <img src="images/yamal/home4.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home4"></P>
+                        <p id="home4bir"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home5.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home5"></P>
+                        <p id="home5bir"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home6.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home6"></P>
+                        <p id="home61"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home7.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home7"></P>
+                        <p id="home71"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home8.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home8"></P>
+                        <p id="home81"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home9.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home9"></P>
+                        <p id="home91"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home10.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home10"></P>
+                        <p id="home101"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home11.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home11"></P>
+                        <p id="home111"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home12.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home12"></P>
+                        <p id="home121"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home13.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home13"></P>
+                        <p id="home131"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home14.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home14"></P>
+                        <p id="home141"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home15.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home15"></P>
+                        <p id="home151"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home16.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home16"></P>
+                        <p id="home161"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home17.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home17"></P>
+                        <p id="home171"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home18.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home18"></P>
+                        <p id="home181"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home19.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home19"></P>
+                        <p id="home191"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home20.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home20"></P>
+                        <p id="home201"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home21.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home21"></P>
+                        <p id="home211"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home22.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home22"></P>
+                        <p id="home221"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home23.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home23"></P>
+                        <p id="home231"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home24.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home24"></P>
+                        <p id="home241"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home25.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home25"></P>
+                        <p id="home251"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home26.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home26"></P>
+                        <p id="home261"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home27.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home27"></P>
+                        <p id="home271"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home28.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home28"></P>
+                        <p id="home281"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home29.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home29"></P>
+                        <p id="home291"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home30.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home30"></P>
+                        <p id="home301"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home31.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home31"></P>
+                        <p id="home311"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home32.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home32"></P>
+                        <p id="home321"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home33.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home33"></P>
+                        <p id="home331"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home34.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home34"></P>
+                        <p id="home341"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home35.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home35"></P>
+                        <p id="home351"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home36.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home36"></P>
+                        <p id="home361"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home37.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home37"></P>
+                        <p id="home371"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home38.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home38"></P>
+                        <p id="home381"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home39.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home39"></P>
+                        <p id="home391"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home40.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home40"></P>
+                        <p id="home401"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home41.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home41"></P>
+                        <p id="home411"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home42.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home42"></P>
+                        <p id="home421"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home43.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home43"></P>
+                        <p id="home431"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home44.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home44"></P>
+                        <p id="home441"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home45.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home45"></P>
+                        <p id="home451"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home46.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home46"></P>
+                        <p id="home461"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home47.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home47"></P>
+                        <p id="home471"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home48.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home48"></P>
+                        <p id="home481"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home49.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home49"></P>
+                        <p id="home491"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home50.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home50"></P>
+                        <p id="home501"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home51.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home51"></P>
+                        <p id="home511"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home52.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home52"></P>
+                        <p id="home521"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home53.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home53"></P>
+                        <p id="home531"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home54.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home54"></P>
+                        <p id="home541"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home55.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home55"></P>
+                        <p id="home551"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home56.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home56"></P>
+                        <p id="home561"></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 " style="background-color: whitesmoke;">
+                        <a class="linkImage" href="projects/tobolsk_1.html">
+                            <img src="images/yamal/home57.jpg" class="img-fluid">
+                        </a>
+                        <P class="bold" id="home57"></P>
+                        <p id="home571"></p>
+                    </div>
+                </div>
+            </div>
+            <a href="completedProject.html">
+                <button class="button1" id="completedProjects1"></button>
+            </a>
+            <span>
+                <a href="#">
+                    <button class="button " id="currentProjects1"></button>
+                </a>
+            </span>
+            <br><br><br>
+            <button class="button2" id="goBack1" onclick="goBack()"></button>
+            <br><br> <br><br><br>
+
+            <div class="rows adress">
+                <p id="bottom1" class="bottomText"></p>
+                <div class="bottom_container">
+                    <i class="fa fa-address-book-o icon" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="adressBottom" style="padding-bottom: 5px; text-align: center;"></span>
+                    <br>
+                    <i class="fa fa-phone icon" style="font-size:24px"></i> &nbsp; &nbsp;
+                    <a href="tel:90-216-538-0300">+ 90 216 538 03 00</a>
+                    <br>
+                    <i class="fa fa-fax icon" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span>+ 90 216 537 03 23</span>
+                    <br>
+                    <i class="fa fa-envelope icon" style="font-size:24px"></i> &nbsp;&nbsp;
+                    <span id="email">yamata@yamata.com.tr</span>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <script src="js/mineJs/main.js"></script>
+    <script src="js/mineJs/yamal.js"></script>
+</body>
+
+</html>

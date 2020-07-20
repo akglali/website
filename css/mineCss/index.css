@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.about {
+    left: 85%;
+    position: absolute;
+    top: 25%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 150px;
+}
+
+#SLIDE_BG {
+    width: 100;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 30s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../../images/slide_1.jpg');
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url('../../images/slide_1.jpg');
+    }
+    10% {
+        background-image: url('../../images/slide_2.jpg');
+    }
+    20% {
+        background-image: url('../../images/slide_3.jpg');
+    }
+    30% {
+        background-image: url('../../images/slide_4.jpg');
+    }
+    40% {
+        background-image: url('../../images/slide_5.jpg');
+    }
+    50% {
+        background-image: url('../../images/slide_6.jpg');
+    }
+    60% {
+        background-image: url('../../images/slide_7.jpg');
+    }
+    70% {
+        background-image: url('../../images/slide_8.jpg');
+    }
+    80% {
+        background-image: url('../../images/slide_9.jpg');
+    }
+    100% {
+        background-image: url('../../images/slide_10.jpg');
+    }
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* CSS File */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 150px;
+}
+
+.w3-container {
+    padding: 60px;
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+}
+
+input[type=text],
+select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.button {
+    margin: 0;
+    position: absolute;
+    left: 59%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #f44336;
+    float: right;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 14px 18px red;
+    color: white;
+    background-color: #00ff90;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.img_container {
+    text-align: center;
+}
